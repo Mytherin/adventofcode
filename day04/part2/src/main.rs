@@ -92,7 +92,6 @@ fn parse_number(line : &str, offset : usize) -> i32 {
     }
 }
 
-
 fn main() {
     let file = File::open("input.txt").unwrap();
     let buf_reader = io::BufReader::new(file);

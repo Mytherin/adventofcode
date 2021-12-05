@@ -84,7 +84,6 @@ fn parse_number(line : &str, offset : usize) -> i32 {
     }
 }
 
-
 fn main() {
     let file = File::open("input.txt").unwrap();
     let buf_reader = io::BufReader::new(file);
@@ -125,7 +124,6 @@ fn main() {
             panic!("Illegally sized board!")
         }
         boards.push(current_board);
-        current_board = BingoBoard::new();
     }
     for number in numbers {
         for board in &mut boards {
