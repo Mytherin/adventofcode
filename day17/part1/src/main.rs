@@ -64,9 +64,6 @@ fn run_simulation(initial_x_velocity : i64, initial_y_velocity : i64) -> i64 {
 }
 
 fn main() {
-    // the max we can get is -171
-    // we surpass the target after TARGET_X_MAX / x_velocity steps
-    // println!("{}", run_simulation(6, 9));
     let mut max_y_found : i64 = 0;
     for x_velocity in 0..TARGET_X_MAX {
         for y_velocity in 0..TARGET_X_MAX+10000000 {
